@@ -1,3 +1,13 @@
+  [
+    $class: 'ThrottleJobProperty',
+    categories: ['my_category'],
+    limitOneJobWithMatchingParams: false,
+    maxConcurrentPerNode: 2,
+    maxConcurrentTotal: 2,
+    paramsToUseForLimit: '',
+    throttleEnabled: true,
+    throttleOption: 'category'
+  ]
 pipeline {
   agent none
   stages {
